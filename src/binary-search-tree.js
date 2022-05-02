@@ -54,16 +54,11 @@ class BinarySearchTree {
       return data < node.data
         ? searchInside(node.left, data)
         : searchInside(node.right, data);
-      // if (data < node.data) {
-      //   return searchInside(node.left, data);
-      // } else {
-      //   return searchInside(node.right, data);
-      // }
     }
   }
 
   find(data) {
-    throw new NotImplementedError("Not implemented");
+    //throw new NotImplementedError("Not implemented");
     return findInside(this.rootNode, data);
 
     function findInside(node, data) {
